@@ -1,0 +1,11 @@
+body{
+	min-height: 200vh;
+	background-color: #31312F;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+h1{
+	font-weight: 300 !important;
+}
