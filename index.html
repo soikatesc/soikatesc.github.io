@@ -9,25 +9,43 @@
 
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     	<script type="text/javascript">
 	    	$(document).ready(function() {
-	    		// console.log("hello")
-			//      // var project_page = $("#project-page");
-			//      // console.log(project_page)
-			   
-			//      // $("#home").click(function(project_page) {
-			//      //      console.log("hello");
-			//      //      project_page.hide("slow", function() {
-			//      //           console.log("inside hide");
-			//      //      });
-			//      // });
 
-	    		$( "#home" ).click(function() {
-				  // alert('hello')
-				  console.log("hello")
-				});
+	    		$('#project-page').hide();
+	    		$('#experience-page').hide();
+	    		$('#skills-page').hide();
+			   
+			     $("#home").click(function() {
+			     	$("#project-page").hide('slow');
+			     	$('#experience-page').hide('slow');
+	    			$('#skills-page').hide('slow');
+			     	$('#home-page').show();			          
+			     });
+
+			     $("#projects").click(function(){
+			     	$("#home-page").hide('slow');
+			     	$('#experience-page').hide('slow');
+	    			$('#skills-page').hide('slow');
+			     	$('#project-page').show();
+			     })
+
+			     $("#experience").click(function(){
+			     	$("#home-page").hide('slow');
+			     	$('#experience-page').show('slow');
+	    			$('#skills-page').hide('slow');
+			     	$('#project-page').hide();
+			     })
+
+			     $("#skills").click(function(){
+			     	$("#home-page").hide('slow');
+			     	$('#experience-page').hide('slow');
+	    			$('#skills-page').show('slow');
+			     	$('#project-page').hide();
+			     })
 			});
     	</script>
   
@@ -46,32 +64,33 @@
 	    <!-- navigation section -->
 	    <div class="row">
 	    	<ul class="center-align">
-	    		<li><a href="" id="home">Home</a></li> |
-	    		<li><a href="" id="projects">Projects</a></li> |
-	    		<li><a href="" id="experience">Experience</a></li> |
-	    		<li><a href="" id="skills">Skills</a></li>
+	    		<li id="home">Home</li> |
+	    		<li id="projects">Projects</li> |
+	    		<li id="experience">Experience</li> |
+	    		<li id="skills">Skills</li>
 	    	</ul>
 	    </div>
 
 	   <!-- home page -->
-	   <div class="row" id="home-page">
+	   	<div class="row" id="home-page">
 
 		    <div class="row center-align" id="about" >
 		    	<img src="assets/images/profile.png" id="profile-pic">
 		    	<h1>MD RAHAMAN</h1>
+		    	<h5>WEB DEVELOPER</h5>
 		    	<div>
-		    		<p id="about-me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		    		<p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
 		    	</div>
 		    </div>
 
 		    <!-- github linkdin -->
 		    <div class="row">
-		    	<div class="col l6 right-align" id="icons">
-			    	<div class="col l2 center-align">
+		    	<div class="col l8 offset-l4" id="icons">
+			    	<div class="col l2">
 			    		<img src="assets/images/github.png">
 			    	</div>
 
-			    	<div class="col l2 ">
+			    	<div class="col l2">
 			    		<img src="assets/images/github.png">
 			    	</div>
 
@@ -84,7 +103,53 @@
 
 	    <!-- Projects Page -->
 	    <div class="row" id="project-page">
-	    	<h1>Projects</h1>
+	    	<h1 class="center-align">Projects</h1>
+
+	    	<div class="col l5">
+	    		<p class="right-align">Project 1</p>
+	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+	    		<p class="right-align">Project 2</p>
+	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	    	</div>
+
+	    	<div class="col l1 offset-l1" id="vertical-line">
+	    	</div>
+
+	    	<div class="col l5">
+	    		<p>Project 2</p>
+	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	    		<p>Project 2</p>
+	    		<p>not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	    	</div>
+	    </div>
+
+	    <!-- Experience Page -->
+	    <div class="row" id="experience-page">
+	    	<h1 class="center-align">Experience</h1>
+
+	    	<div class="col l5">
+	    		<p class="right-align">Project 1</p>
+	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+	    		<p class="right-align">Project 2</p>
+	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	    	</div>
+
+	    	<div class="col l1 offset-l1" id="vertical-line">
+	    	</div>
+
+	    	<div class="col l5">
+	    		<p>Project 2</p>
+	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	    		<p>Project 2</p>
+	    		<p>not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	    	</div>
+	    </div>
+
+	    <!-- skills Page -->
+	    <div class="row" id="skills-page">
+	    	<h1 class="center-align">Skills</h1>
 	    </div>
 
     </div>

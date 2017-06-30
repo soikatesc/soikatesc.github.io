@@ -12,8 +12,8 @@ h1{
 
 #profile-pic{
 	border-radius: 50%;
-	height: 150px;
-	width: 150px;
+	height: 120px;
+	width: 120px;
 }
 
 #logo{
@@ -30,6 +30,7 @@ ul li{
 	display: inline-block;
 	font-size: 20px;
 	color: white;
+	cursor: pointer;
 }
 
 a{
@@ -39,6 +40,13 @@ a{
 
 
 
-#about-me{
-	font-family: "Avenir Next" !important;
+.paragraph{
+	/*font-family: "Avenir Next" !important;*/
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+}
+
+#vertical-line {
+  border-left: thick solid white;
+  height: 1000px;
 }
