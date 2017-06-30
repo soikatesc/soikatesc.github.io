@@ -1,11 +1,44 @@
 body{
-	min-height: 200vh;
+	min-height: 100vh;
 	background-color: #31312F;
 	font-family: 'Oswald', sans-serif;
 	color: white;
-	text-transform: uppercase;
-	text-align: center;
+	/*text-align: center;*/
 }
 h1{
 	font-weight: 300 !important;
+	text-transform: uppercase;
+}
+
+#profile-pic{
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+
+#logo{
+	height: 60px;
+	width: 150px;
+}
+
+#icons{
+	/*margin-left: 35%;*/
+	/*border: 1px solid red;*/
+}
+
+ul li{
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+}
+
+a{
+	color: white;
+}
+
+
+
+
+#about-me{
+	font-family: "Avenir Next" !important;
 }
