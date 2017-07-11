@@ -14,37 +14,44 @@
 
     	<script type="text/javascript">
 	    	$(document).ready(function() {
-
-	    		$('#project-page').hide();
-	    		$('#experience-page').hide();
-	    		$('#skills-page').hide();
+	    		// $('#project-page').hide();
+	    		// $('#experience-page').hide();
+	    		// $('#skills-page').hide();
 			   
 			     $("#home").click(function() {
-			     	$("#project-page").hide('slow');
-			     	$('#experience-page').hide('slow');
-	    			$('#skills-page').hide('slow');
-			     	$('#home-page').show();			          
+			     	$("#project-page").hide();
+			     	$('#experience-page').hide();
+	    			$('#skills-page').hide();
+			     	$( "#home-page" ).fadeIn( 3000, function() {
+					    $('#home-page').show();
+					});			          
 			     });
 
 			     $("#projects").click(function(){
-			     	$("#home-page").hide('slow');
-			     	$('#experience-page').hide('slow');
-	    			$('#skills-page').hide('slow');
-			     	$('#project-page').show();
+			     	$("#home-page").hide();
+			     	$('#experience-page').hide();
+	    			$('#skills-page').hide();
+	    			$( "#project-page" ).fadeIn( 3000, function() {
+					    $('#project-page').show();
+					});
 			     })
 
 			     $("#experience").click(function(){
-			     	$("#home-page").hide('slow');
-			     	$('#experience-page').show('slow');
-	    			$('#skills-page').hide('slow');
+			     	$("#home-page").hide();
+	    			$('#skills-page').hide();
 			     	$('#project-page').hide();
+			     	$( "#experience-page" ).fadeIn( 3000, function() {
+					    $('#experience-page').show();
+					});
 			     })
 
 			     $("#skills").click(function(){
-			     	$("#home-page").hide('slow');
-			     	$('#experience-page').hide('slow');
-	    			$('#skills-page').show('slow');
+			     	$("#home-page").hide();
+			     	$('#experience-page').hide();
 			     	$('#project-page').hide();
+			     	$( "#skills-page" ).fadeIn( 3000, function() {
+					    $('#skills-page').show();
+					});
 			     })
 			});
     	</script>
