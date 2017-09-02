@@ -29,27 +29,13 @@ p {
 	font-family: 'Playfair Display', serif;
 }
 
-/*.parallax{
-	background-color: #5BA187;
-}*/
+#education p {
+	color: #E6E6E6;
+}
 
-/*#div-with-bg {
-	width: 100%;
-	height: 60%;
-	margin: auto;
-	background: url('../images/hero_image.jpg') no-repeat;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	display: table;
-	top:0;
-	padding: 50px 100px 0 100px;
+#education h6 {
+	color: white;
+	font-size: 20px;
 }
 
 
-#nav-bar {
-	margin-top: 30px;
-}*/
-
-5BA187
