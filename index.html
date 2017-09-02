@@ -1,172 +1,379 @@
-<html>
-	<head>
-		<!-- Compiled and minified CSS -->
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+			<!-- Compiled and minified CSS -->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  		<!-- main css -->
+  		<link rel="stylesheet" href="assets/css/style.css">
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <body>
+    <!-- Navigation Section -->
+    	<div class="navbar-fixed">
+	      	<nav>
+			    <div class="nav-wrapper blue-grey darken-2">
+			      <a href="#!" class="brand-logo"><span class="logo grey-text text-lighten-2">Md Rahaman</span></a>
+			      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			      <ul class="right hide-on-med-and-down">
+			        <li><a href="#">Skills</a></li>
+			        <li><a href="#">Projects</a></li>
+			        <li><a href="#">Experience</a></li>
+			        <li><a href="#">Contact</a></li>
+			      </ul>
+			      <ul class="side-nav" id="mobile-demo">
+			        <li><a href="#">Skills</a></li>
+			        <li><a href="#">Projects</a></li>
+			        <li><a href="#">Experience</a></li>
+			        <li><a href="#">Contact</a></li>
+			      </ul>
+			    </div>
+	  		</nav>
+  		</div>
 
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<!-- Hero Section -->
+  		<div class="parallax-container valign-wrapper">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col l6 s12 white-text">
+  						<h1 class="left-align flow-text valign" id="main-heading">I am Md Rahaman, a Full Stack Web Developer &amp; a passionate DevOps</h1>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col l4 s12">
+  						<a class="waves-effect btn-large hoverable">Get Started</a>
+  					</div>
+  					<div class="col l4 s12">
+  						<a href="https://www.linkedin.com/in/md-rahaman/"><img src="assets/images/social-linkedin.png" class="hoverable circle"></a>
+  						<a href=""><img src="assets/images/social-mail.png" class="hoverable circle"></a>
+  						<a href=""><img src="assets/images/social-linkedin.png" class="hoverable circle"></a>
+  					</div>
+  				</div>
+  			</div>
+      		<div class="parallax">
+      			<img src="assets/images/hero_image.jpg">
+      		</div>
+    	</div>
 
-    	<script type="text/javascript">
-	    	$(document).ready(function() {
-	    		// $('#project-page').hide();
-	    		// $('#experience-page').hide();
-	    		// $('#skills-page').hide();
-			   
-			     $("#home").click(function() {
-			     	$("#project-page").hide();
-			     	$('#experience-page').hide();
-	    			$('#skills-page').hide();
-			     	$( "#home-page" ).fadeIn( 3000, function() {
-					    $('#home-page').show();
-					});			          
-			     });
+    	<!-- Projects -->
+    	<div class="container">
+    		
+    		<div class="row">
+    			<h2>Projects</h2>
+    		</div>
 
-			     $("#projects").click(function(){
-			     	$("#home-page").hide();
-			     	$('#experience-page').hide();
-	    			$('#skills-page').hide();
-	    			$( "#project-page" ).fadeIn( 3000, function() {
-					    $('#project-page').show();
-					});
-			     })
+    		<div class="row">
+    			<div class="col l6">
+    				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light z-depth-2">
+					      <img class="activator" src="assets/images/turbo_deopoyments.png">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Turbo Deployments<i class="material-icons right">more_vert</i></span>
+					      <p><a class="waves-effect btn-large hoverable" href="https://turbodeployments.online">Click here to see</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Turbo Deployments<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+		  			</div>
+    			</div>
 
-			     $("#experience").click(function(){
-			     	$("#home-page").hide();
-	    			$('#skills-page').hide();
-			     	$('#project-page').hide();
-			     	$( "#experience-page" ).fadeIn( 3000, function() {
-					    $('#experience-page').show();
-					});
-			     })
+    			<div class="col l6">
+    				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light z-depth-2">
+					      <img class="activator" src="assets/images/hero_image.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Dojo Chat<i class="material-icons right">more_vert</i></span>
+					      <p><p><a class="waves-effect btn-large hoverable" href="https://turbodeployments.online">Click here to see</a></p></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Dojo Chat<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+		  			</div>
+    			</div>	
+    		</div>
 
-			     $("#skills").click(function(){
-			     	$("#home-page").hide();
-			     	$('#experience-page').hide();
-			     	$('#project-page').hide();
-			     	$( "#skills-page" ).fadeIn( 3000, function() {
-					    $('#skills-page').show();
-					});
-			     })
-			});
-    	</script>
-  
+    		<div class="row">
+    			<div class="col l6 offset-l3">
+    				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light z-depth-2">
+					      <img class="activator" src="assets/images/hero_image.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Rasberry Gateway<i class="material-icons right">more_vert</i></span>
+					      <p><p><a class="waves-effect btn-large hoverable" href="https://turbodeployments.online">Click here to see</a></p></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Rasberry Gateway<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+		  			</div>
+    			</div>
+    		</div>
+    	</div>
 
-	  <!-- Compiled and minified JavaScript -->
+    	<!-- pre-skills sections -->
+    	<div class="parallax-container valign-wrapper">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col l2 offset-l5 s12">
+  						<img src="assets/images/social-linkedin.png">
+  						<img src="assets/images/social-linkedin.png">
+  						<img src="assets/images/social-linkedin.png">
+  					</div>
+  				</div>
+  			</div>
+      		<div class="parallax">
+      			<img src="assets/images/hero_image.jpg">
+      		</div>
+    	</div>
 
-		<title>My Portfolio</title>
-	</head>
+    	<!-- Skills section -->
 
-	<body>
-	<div class="container">
-		<div class="row left-align" class="logo">
-			<img src="assets/images/my-brand-logo 1.0.png" id="logo">
-		</div>
+    	<div class="container">
+    		<div class="row">
+    			<h2>Skills</h2>
+    		</div>
 
-	    <!-- navigation section -->
-	    <div class="row">
-	    	<ul class="center-align">
-	    		<li id="home">Home</li> |
-	    		<li id="projects">Projects</li> |
-	    		<li id="experience">Experience</li> |
-	    		<li id="skills">Skills</li>
-	    	</ul>
-	    </div>
+    		  <div class="row">
+			    <div class="col s12">
+			      <ul class="tabs">
+			        <li class="tab col s6"><a class="active" href="#web">WEB DEVELOPMENT</a></li>
+			        <li class="tab col s6"><a href="#dev-ops">DEVOPS</a></li>
+			      </ul>
+			    </div>
+			    <div id="web" class="col s12 l12">
+					<div class="col s12 l6">
+						<div class="card-panel blue-grey darken-1">
+					          <h6 class="white-text">Python</h6>
+					          <p>Frameworks: Django, Flask</p>
+					          <p>Data Analysis: Numpy, Pandas, Matplotlib</p>
+					          <p>Additional: Jinja Template, SQLite, Django-Rest, TDD</p>
+					    </div>
+				    </div>
+				    <div class="col s12 l6">
+						<div class="card-panel blue-grey darken-1">
+					          <h6 class="white-text">MEAN</h6>
+					          <p>Frameworks: Node Js, Express Js</p>
+					          <p>Data Analysis: Numpy, Pandas, Matplotlib</p>
+					          <p>Additional: Jinja Template, SQLite, Django-Rest</p>
+					    </div>
+				    </div>
+				    <div class="col s12 l6">
+						<div class="card-panel blue-grey darken-1">
+					          <h6 class="white-text">Ruby</h6>
+					          <p>Frameworks: Ruby On Rails</p>
+					          <p>Data Analysis: Active Record, CLi</p>
+					          <p>Additional: Jinja Template, SQLite, Django-Rest</p>
+					    </div>
+				    </div>
+				    <div class="col s12 l6">
+						<div class="card-panel blue-grey darken-1">
+					          <h6 class="white-text">Web Fundamentals</h6>
+					          <p>Markups: HTML, CSS, JavaScript</p>
+					          <p>Web Servers: Nginx, Apache</p>
+					          <p>Additionals: Rest APIS, JSON, XML, BootStrap, Materialize, Ajax, JQuery, Postman</p>					  
+					    </div>
+				    </div>			
+			    </div>
+			    <div id="dev-ops" class="col s12">
+			    	<div class="col s12 l6">
+						<div class="card-panel blue-grey darken-2">
+					          <h6 class="white-text">Automation</h6>
+					          <p>Deployments Tools: Ansible, Chef, Docker</p>
+					          <p>Templates: YAML, Cookbooks, playbooks</p>
+					          <p>Additional: </p>
+					    </div>
+				    </div>
+				    <div class="col s12 l6">
+						<div class="card-panel blue-grey darken-2">
+					          <h6 class="white-text">Cloud</h6>
+					          <p>Frameworks: Ruby On Rails</p>
+					          <p>Data Analysis: Active Record, CLi</p>
+					          <p>Additional: Jinja Template, SQLite, Django-Rest</p>
+					    </div>
+				    </div>
+				    <div class="col s12 l6">
+						<div class="card-panel blue-grey darken-2">
+					          <h6 class="white-text">Cloud</h6>
+					          <p>Frameworks: Ruby On Rails</p>
+					          <p>Data Analysis: Active Record, CLi</p>
+					          <p>Additional: Jinja Template, SQLite, Django-Rest</p>
+					    </div>
+				    </div>
+				    <div class="col s12 l6">
+						<div class="card-panel blue-grey darken-2">
+					          <h6 class="white-text">Cloud</h6>
+					          <p>Frameworks: Ruby On Rails</p>
+					          <p>Data Analysis: Active Record, CLi</p>
+					          <p>Additional: Jinja Template, SQLite, Django-Rest</p>
+					    </div>
+				    </div>
+			    </div>
+			  </div>
+    	</div>
 
-	   <!-- home page -->
-	   	<div class="row" id="home-page">
+    	<div class="container">
+    		<div class="divider"></div>
+    	</div>
 
-		    <div class="row center-align" id="about" >
-		    	<img src="assets/images/profile.png" id="profile-pic">
-		    	<h1>MD RAHAMAN</h1>
-		    	<h5>WEB DEVELOPER</h5>
-		    	<div>
-		    		<p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
-		    	</div>
-		    </div>
+    	<div class="container">
+    		<div class="row">
+    			<h2>Education</h2>
+    		</div>
 
-		    <!-- github linkdin -->
-		    <div class="row">
-		    	<div class="col l8 offset-l4" id="icons">
-			    	<div class="col l2">
-			    		<img src="assets/images/github.png">
-			    	</div>
+    		<div class="row">
+			    <div class="col s12">
+			      <ul class="tabs">
+			        <li class="tab col s6"><a class="active" href="#ucf">University of Central Florida</a></li>
+			        <li class="tab col s6"><a href="#coding-dojo">Coding Dojo</a></li>
+			      </ul>
+			    </div>
+			    <div id="ucf" class="col s12">
+			    	<div class="row">
+				      <div class="col s12 m5 l6">
+				        <div class="card-panel teal">
+				          <h6 class="white-text">Bachelor of Technology, Electrical Engineering</h6>
+				          <p>Orlando, FL</p>
+				          <p>Jan 2012-May 2016</p>
+				          <p>GPA: 4.70/4</p>
+				        </div>
+				      </div>
+				    </div>			   
+			    </div>
+			    <div id="coding-dojo" class="col s12">
+			    	<div class="row">
+				      <div class="col s12 m5 l6 offset-l6">
+				        <div class="card-panel teal">
+				          <h6 class="white-text">Coding Dojo</h6>
+				          <p>Dallas, TX</p>
+				          <p>Jan 2012-May 2016</p>
+				          <p>Blackbelt: Python, MEAN, Ruby</p>
+				        </div>
+				      </div>
+				    </div>
+			    </div>
+			</div>
+    	</div>
 
-			    	<div class="col l2">
-			    		<img src="assets/images/github.png">
-			    	</div>
+    	<!-- pre experience Section -->
+    	<div class="parallax-container valign-wrapper">
+  			<div class="container">
+  				<div class="row center">
+  					<div class="col l10 s12 valign">
+  						<h1 class="center-align white-text">Interested in working together</h1>
+  					</div>
+  				</div>
+  			</div>
+      		<div class="parallax">
+      			<img src="assets/images/hero_image.jpg">
+      		</div>
+    	</div>
 
-			    	<div class="col l2">
-			    		<img src="assets/images/github.png">
-			    	</div>
-		    	</div>
-		    </div>
-	    </div>
+    	<!-- Experience -->
+    	<div class="container">
 
-	    <!-- Projects Page -->
-	    <div class="row" id="project-page">
-	    	<h1 class="center-align">Projects</h1>
+    		<div class="row">
+    			<h2>Professional Experience</h2>
+    		</div>
+    		<div class="row">
+	        	<div class="col s12 m6 l4 offset-l4">
+	          		<div class="card z-depth-3 blue-grey darken-1">
+			            <div class="card-content white-text">
+			              <span class="card-title">Texas Instument</span>
+			              <p>Role: Test Engineer</p>
+			              <p>Date: Aug 2016-Feb 2017</p>
+			            </div>
+		          	</div>
+	        	</div>
+	      	</div>
+    		
+    	</div>
 
-	    	<div class="col l5">
-	    		<p class="right-align">Project 1</p>
-	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    	<div class="container">
+    		<div class="divider"></div>
+    	</div>
 
-	    		<p class="right-align">Project 2</p>
-	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	    	</div>
+    	<!-- About Section -->
+    	<div class="container">
+    		<div class="row">
+    			<h2 class="section-header">About Me</h2>
+    		</div>
 
-	    	<div class="col l1 offset-l1" id="vertical-line">
-	    	</div>
+    		<div class="row">
+	            <div class="col s12 m5 offset-m3 l4 offset-l4">
+	              <div class="center">
+	                <img class="circle" id="responsive-img" src="assets/images/profile.png">
+	                <h4>Md Rahaman</h4>
+	                <p class="light center flow-text">I am Md Rahaman. I have completed bachelor degree from University of Central Florida. I enjoy working with full stack web development and DevOps tools.</p>
+	              </div>
+            	</div>
+          	</div>
+    	</div>
 
-	    	<div class="col l5">
-	    		<p>Project 2</p>
-	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	    		<p>Project 2</p>
-	    		<p>not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	    	</div>
-	    </div>
+    	<!-- contact me -->
+    	<div class="container">
+    		<div class="divider"></div>
+    	</div>
+    	<div class="container">
+    		<div class="row">
+    			<h2 class="section-header">Contact Me</h2>
+    		</div>
+    		<div class="row">
+	        	<div class="col s12 m6 offset-m4 l6 offset-l4">
+	          		<div class="card z-depth-3 blue-grey darken-1">
+			            <div class="card-content white-text center">
+			              <p>Phone: (407)455-4121</p>
+			              <p>Email: soikatesc@gmail.com</p>
+			            </div>
+		          	</div>
+	        	</div>
+	      	</div>
+    	</div>
+    	<!-- Footer Section -->
+    	<footer class="page-footer blue-grey darken-3">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col l6 s12">
+    					<h5 class="whtie-text">Web Developer and DevOPs</h5>
+    					<ul>
+    						<li class="grey-text text-lighten-4">Full Stack Web Development</li>
+    						<li class="grey-text text-lighten-4">Deployment</li>
+    						<li class="grey-text text-lighten-4">Linux Administration</li>
+    					</ul>
+    				</div>
+    				<div class="col l4 offset-l2 s12">
+    					<h5 class="white-text">Links</h5>
+    					<ul>
+    						<li><a href="" class="grey-text text-lighten-3">Services</a></li>
+    						<li><a href="" class="grey-text text-lighten-3">Services</a></li>
+    						<li><a href="" class="grey-text text-lighten-3">Services</a></li><li><a href="" class="grey-text text-lighten-3">Services</a></li>
 
-	    <!-- Experience Page -->
-	    <div class="row" id="experience-page">
-	    	<h1 class="center-align">Experience</h1>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="footer-copyright blue-grey darken-4">
+    			<div class="container">
+    				<p>&copy; 2017 Copyright Md Rahaman, All Rights Reserved.</p>
+    			</div>
+    		</div>
+    	</footer>
 
-	    	<div class="col l5">
-	    		<p class="right-align">Project 1</p>
-	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      	<!--Import jQuery before materialize.js-->
+      	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+			<!-- Compiled and minified JavaScript -->
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  		<script type="text/javascript" src="assets/scripts/script.js"></script>
 
-	    		<p class="right-align">Project 2</p>
-	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	    	</div>
-
-	    	<div class="col l1 offset-l1" id="vertical-line">
-	    	</div>
-
-	    	<div class="col l5">
-	    		<p>Project 2</p>
-	    		<p class="paragraph">not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	    		<p>Project 2</p>
-	    		<p>not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	    	</div>
-	    </div>
-
-	    <!-- skills Page -->
-	    <div class="row" id="skills-page">
-	    	<h1 class="center-align">Skills</h1>
-	    </div>
-
-    </div>
-
-
-		
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-
-
-
-	</body>
-</html>
+    </body>
+  </html>

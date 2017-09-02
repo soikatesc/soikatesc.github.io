@@ -1,52 +1,55 @@
-body{
-	min-height: 100vh;
-	background-color: #31312F;
-	font-family: 'Oswald', sans-serif;
-	color: white;
-	/*text-align: center;*/
-}
-h1{
-	font-weight: 300 !important;
-	text-transform: uppercase;
+body {
+	min-height: 300vh;
+	font-family: 'Playfair Display', serif;
 }
 
-#profile-pic{
-	border-radius: 50%;
-	height: 120px;
-	width: 120px;
+.logo {
+	font-weight: 300;
+	padding-left: 10px;
 }
 
-#logo{
-	height: 60px;
-	width: 150px;
+.parallax-container {
+	opacity: 0.9;
 }
 
-#icons{
-	/*margin-left: 35%;*/
-	/*border: 1px solid red;*/
+.btn-large {
+	background-color: #DF613D;
 }
 
-ul li{
-	display: inline-block;
-	font-size: 20px;
-	color: white;
-	cursor: pointer;
+.col #main-heading {
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+	color: #E6E6E6;
 }
 
-a{
-	color: white;
+h1, h2, h3{
+	font-family: 'Playfair Display', serif;
+}
+p {
+	font-family: 'Playfair Display', serif;
+}
+
+/*.parallax{
+	background-color: #5BA187;
+}*/
+
+/*#div-with-bg {
+	width: 100%;
+	height: 60%;
+	margin: auto;
+	background: url('../images/hero_image.jpg') no-repeat;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	display: table;
+	top:0;
+	padding: 50px 100px 0 100px;
 }
 
 
+#nav-bar {
+	margin-top: 30px;
+}*/
 
-
-.paragraph{
-	/*font-family: "Avenir Next" !important;*/
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 24px;
-}
-
-#vertical-line {
-  border-left: thick solid white;
-  height: 1000px;
-}
+5BA187
