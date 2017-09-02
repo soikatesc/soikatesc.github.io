@@ -38,4 +38,12 @@ p {
 	font-size: 20px;
 }
 
+#skills p {
+	color: #E6E6E6;
+}
+
+#skills ul li {
+	font-size: 20px;
+	color: white;
+}
 
